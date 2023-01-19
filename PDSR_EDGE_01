@@ -39,7 +39,7 @@ set telnet disabled=yes
 set ftp disabled=yes
 set www disabled=yes
 set winbox port=7092
-set api-ssl disabled=yes
+set api-ssl disabled=no
 /system identity
 set name=PDSR_EDGE_01
 /system logging
