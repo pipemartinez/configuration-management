@@ -5,7 +5,7 @@
 # serial number = FAD30FAB1225
 /interface bridge
 add name=bridge-trunk
-add name=lo0
+add name=lo1
 /interface vlan
 add comment="VLAN MGMT" interface=bridge-trunk name=VLAN11 vlan-id=11
 add interface=bridge-trunk name=VLAN2100 vlan-id=2100
