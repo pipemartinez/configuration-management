@@ -51,4 +51,4 @@ add action=remote topics=warning
 /system package update
 set channel=long-term
 /tool romon
-set enabled=yes
+set enabled=yes\
