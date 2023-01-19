@@ -2,7 +2,7 @@
 # software id = EZ2Q-NXY6
 #
 # model = RB4011iGS+
-# serial number = FAD30FAB1224
+# serial number = FAD30FAB1234
 /interface bridge
 add name=bridge-trunk
 add name=lo0
@@ -41,7 +41,7 @@ set www disabled=yes
 set winbox port=7092
 set api-ssl disabled=no
 /system identity
-set name=PDSR_EDGE_01
+set name=PDSR_EDGE_04
 /system logging
 set 3 action=memory
 add action=remote topics=critical

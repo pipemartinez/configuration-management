@@ -1,0 +1,54 @@
+# jan/12/2023 09:45:22 by RouterOS 6.48.6
+# software id = EZ2Q-NXY6
+#
+# model = RB4011iGS+
+# serial number = FAD30FAB1225
+/interface bridge
+add name=bridge-trunk
+add name=lo0
+/interface vlan
+add comment="VLAN MGMT" interface=bridge-trunk name=VLAN11 vlan-id=11
+add interface=bridge-trunk name=VLAN2100 vlan-id=2100
+add interface=bridge-trunk name=VLAN2110 vlan-id=2110
+add interface=bridge-trunk name=VLAN2120 vlan-id=2120
+add interface=bridge-trunk name=VLAN2130 vlan-id=2130
+add interface=bridge-trunk name=VLAN2140 vlan-id=2140
+add interface=bridge-trunk name=VLAN2150 vlan-id=2150
+add interface=bridge-trunk name=VLAN2160 vlan-id=2160
+add interface=bridge-trunk name=VLAN2170 vlan-id=2170
+add interface=bridge-trunk name=VLAN2180 vlan-id=2180
+add interface=bridge-trunk name=VLAN2190 vlan-id=2190
+add interface=bridge-trunk name=VLAN2200 vlan-id=2200
+add interface=bridge-trunk name=VLAN2210 vlan-id=2210
+add interface=bridge-trunk name=VLAN2220 vlan-id=2220
+add interface=bridge-trunk name=VLAN2230 vlan-id=2230
+add interface=bridge-trunk name=VLAN2240 vlan-id=2240
+add interface=bridge-trunk name=VLAN2250 vlan-id=2250
+add interface=bridge-trunk name=VLAN2500 vlan-id=2500
+/interface ethernet switch port
+set 0 default-vlan-id=0
+set 1 default-vlan-id=0
+set 2 default-vlan-id=0
+set 3 default-vlan-id=0
+set 4 default-vlan-id=0
+set 10 default-vlan-id=0
+/ip neighbor discovery-settings
+set discover-interface-list=all
+/ip service
+set telnet disabled=yes
+set ftp disabled=yes
+set www disabled=yes
+set winbox port=7092
+set api-ssl disabled=yes
+/system identity
+set name=PDSR_EDGE_02
+/system logging
+set 3 action=memory
+add action=remote topics=critical
+add action=remote topics=error
+add action=remote topics=info
+add action=remote topics=warning
+/system package update
+set channel=long-term
+/tool romon
+set enabled=yes
