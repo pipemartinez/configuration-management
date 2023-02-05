@@ -2,12 +2,12 @@
 # software id = EZ2Q-NXY6
 #
 # model = RB4011iGS+
-# serial number = FAD30FAB1234
+# serial number = FAD30FBX1234
 /interface bridge
 add name=bridge-trunk
 add name=lo0
 /interface vlan
-add comment="VLAN MGMT" interface=bridge-trunk name=VLAN111 vlan-id=111
+add comment="VLAN MGMT" interface=bridge-trunk name=VLAN11 vlan-id=11
 add interface=bridge-trunk name=VLAN1100 vlan-id=1100
 add interface=bridge-trunk name=VLAN1110 vlan-id=1110
 add interface=bridge-trunk name=VLAN1120 vlan-id=1120
@@ -41,7 +41,7 @@ set www disabled=yes
 set winbox port=7092
 set api-ssl disabled=no
 /system identity
-set name=PDSR_EDGE_04
+set name=VICO_EDGE_01
 /system logging
 set 3 action=memory
 add action=remote topics=critical
